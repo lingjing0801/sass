@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,EAAE,CAAA;EACE,KAAK,EAFG,IAAI;CAGf",
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,IAAI;CACzB",
     "sources": [
         "style.scss"
     ],
