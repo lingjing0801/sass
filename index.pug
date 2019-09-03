@@ -21,7 +21,7 @@ html(lang="zh")
         header(id="nav")
             div(id="logo") LION SUGAR
                 br
-                span 獅子堂啤酒專賣
+                span(id="logo-zh") 獅子堂啤酒專賣
             nav
                 +nav-a("home", "關於我們","ABOUT")
                 +nav-a("location","全球據點","LOCATIONS")
@@ -29,6 +29,7 @@ html(lang="zh")
                 +nav-a("contact","加盟專區","FRANCHISEE")
         section(id="banner")
         section(id="about")
+            div(id="about-bg")
             +title("home", "關於我們","ABOUT")
         +title("location","全球據點","LOCATIONS")
         +title("hot","熱門經典","CLASSICAL")
