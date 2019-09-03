@@ -113,8 +113,27 @@ body {
 }
 
 #location {
-  height: 90vh;
+  min-height: 90vh;
   position: relative;
+}
+
+#location #location-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#location #location-container .location-title {
+  text-align: right;
+}
+
+#location #location-container .location-title .location-text {
+  color: white;
+  font-size: 0.7em;
+  text-align: center;
+  display: inline-block;
 }
 
 .container {

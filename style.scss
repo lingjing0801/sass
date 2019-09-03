@@ -119,8 +119,26 @@ body {
 }
 
 #location {
-    height: 90vh;
+    // 最小高度
+    min-height: 90vh;
     position: relative;
+
+    #location-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+        .location-title {
+            text-align: right;
+            
+            .location-text {
+                color: white;
+                font-size: 0.7em;
+                text-align: center;
+                display: inline-block;
+            }
+        }
+    }
 }
 
 // 內容區塊 container
