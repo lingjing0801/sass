@@ -4,22 +4,33 @@ mixin nav-a(img,textZH,textEN)
         span=textZH
         br
         span=textEN
+mixin title(img,textZH,textEN)
+    div(class="title")
+        img(src="img/" + img + ".png", alt="連結縮圖")
+        span=textZH
+        br
+        span=textEN
 <!DOCTYPE html>
 html(lang="zh")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="style.css")
-        title 獅子堂 | 首頁 | 黑糖專賣
+        title 獅子堂 | 首頁 | 啤酒專賣
     body
         header(id="nav")
             div(id="logo") LION SUGAR
-            br
-            span 獅子堂黑糖專賣
+                br
+                span 獅子堂啤酒專賣
             nav
                 +nav-a("home", "關於我們","ABOUT")
                 +nav-a("location","全球據點","LOCATIONS")
                 +nav-a("hot","熱門經典","CLASSICAL")
                 +nav-a("contact","加盟專區","FRANCHISEE")
         section(id="banner")
+        section(id="about")
+            +title("home", "關於我們","ABOUT")
+        +title("location","全球據點","LOCATIONS")
+        +title("hot","熱門經典","CLASSICAL")
+        +title("contact","加盟專區","FRANCHISEE")
                 
