@@ -137,6 +137,21 @@ body {
   display: inline-block;
 }
 
+#location .location-img-box {
+  overflow: hidden;
+}
+
+#location .location-img-box img {
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#location .location-img-box:hover img {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
 .container {
   width: 80%;
   max-width: 1200px;
