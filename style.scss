@@ -170,3 +170,38 @@ body {
     }
 
 }
+
+// 加盟專區
+.franchisee-box {
+    text-align: center;
+    padding: 100px 0;
+
+    a {
+        text-decoration: none;
+        color: $color-gold;
+        
+        .logo {
+            font-size: 2.5em;
+
+            .logo-zh {
+                font-size: 0.65em;;
+            }
+        }
+
+        h3 {
+            font-size: 2.1em;
+            padding: 10px 0;
+            letter-spacing: 4px;
+        }
+    }
+}
+
+// 頁尾
+footer {
+    text-align: center;
+    color: white;
+    opacity: 0.5;
+    font-size: 0.6em;
+    padding: 20px 0;
+    background-color: #000;
+}

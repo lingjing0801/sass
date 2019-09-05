@@ -167,4 +167,37 @@ body {
 #classcial .classcial-box {
   text-align: center;
 }
+
+.franchisee-box {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.franchisee-box a {
+  text-decoration: none;
+  color: #ffe159;
+}
+
+.franchisee-box a .logo {
+  font-size: 2.5em;
+}
+
+.franchisee-box a .logo .logo-zh {
+  font-size: 0.65em;
+}
+
+.franchisee-box a h3 {
+  font-size: 2.1em;
+  padding: 10px 0;
+  letter-spacing: 4px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.6em;
+  padding: 20px 0;
+  background-color: #000;
+}
 /*# sourceMappingURL=style.css.map */
