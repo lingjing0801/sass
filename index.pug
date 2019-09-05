@@ -25,6 +25,8 @@ html(lang="zh")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="style.css")
+        //- aos 套件 cdn
+        link(rel="stylesheet", href="https://unpkg.com/aos@next/dist/aos.css")
         title 獅子堂 | 首頁 | 啤酒專賣
     body
         header(id="nav")
@@ -63,10 +65,15 @@ html(lang="zh")
              div(class="bg bg-location")
              div(class="container")
                 +title("hot","熱門經典","CLASSICAL")
-                div(class="classcial-box")
+                div(class="classcial-box" data-aos="slide-up" data-aos-duration="1000")
                     div(class="logo") LION SUGAR
                         br
                         span(class="logo-zh") 獅子堂啤酒專賣
-                    img(src="img/beer.png", alt="啤酒")
+                    img(src="img/beer.png", alt="啤酒" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100")
         +title("contact","加盟專區","FRANCHISEE")
+
+
+
+        script(src="https://unpkg.com/aos@next/dist/aos.js")
+        script AOS.init();
                 

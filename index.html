@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <title>獅子堂 | 首頁 | 啤酒專賣</title>
   </head>
   <body>
@@ -76,11 +77,13 @@
       <div class="bg bg-location"></div>
       <div class="container">
         <div class="title"><img src="img/hot.png" alt="連結縮圖"/><span>熱門經典</span><br/><span>CLASSICAL</span></div>
-        <div class="classcial-box">
-          <div class="logo">LION SUGAR<br/><span class="logo-zh">獅子堂啤酒專賣</span></div><img src="img/beer.png" alt="啤酒"/>
+        <div class="classcial-box" data-aos="slide-up" data-aos-duration="1000">
+          <div class="logo">LION SUGAR<br/><span class="logo-zh">獅子堂啤酒專賣</span></div><img src="img/beer.png" alt="啤酒" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="100"/>
         </div>
       </div>
     </section>
     <div class="title"><img src="img/contact.png" alt="連結縮圖"/><span>加盟專區</span><br/><span>FRANCHISEE</span></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>
