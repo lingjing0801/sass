@@ -79,27 +79,7 @@ body {
     background-size: cover;
 }
 
-// 關於我
-#about {
-    height: 90vh;
-    // 父元素 相對定位
-    position: relative;
 
-    #about-bg{
-        background-image: url(img/about.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        // 濾鏡 模糊 亮度
-        filter:blur(2px) brightness(30%);
-        // 子元素 絕對定位
-        position: absolute;
-        top:0;
-        z-index:-1;
-    }
-    
-}
 // 背景
 .bg {
     background-size: cover;
@@ -120,6 +100,40 @@ body {
 .bg-location {
     background-image: url(img/about.jpg);
 }
+// 關於我
+#about {
+    height: 90vh;
+    // 父元素 相對定位
+    position: relative;
+    
+    color: white;
+
+    .about-box {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        padding: 30px 0;
+        align-items: center;
+
+        img {
+            width: 60px;
+            padding: 20px 0;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 1.6em;
+            padding: 20px 0;
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 0.8em;
+            line-height: 2;
+        }
+    }
+}
+
+
 // 全球據點
 #location {
     // 最小高度
@@ -170,6 +184,7 @@ body {
     }
 
 }
+
 
 // 加盟專區
 .franchisee-box {
